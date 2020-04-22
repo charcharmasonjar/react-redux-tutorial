@@ -1,3 +1,8 @@
+// best practice to wrap every action in a function (action creator)
+
+import { ADD_ARTICLE } from "../constants/action-types";
+
 export function addArticle(payload) {
-  return { type: "ADD_ARTICLE", payload };
+  return { type: ADD_ARTICLE, payload };
 }
+
