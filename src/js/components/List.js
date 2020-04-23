@@ -8,8 +8,8 @@ const mapStateToProps = state => {
 // List component receives prop articles from the reducer
 const ConnectedList = ({ articles }) => (
   <ul>
-    {articles.map(el => (
-      <li key={el.id}>{el.title}</li>
+    {articles.map((el, index) => (
+      <li key={index}>{el.title}</li>
     ))}
   </ul>
 )
