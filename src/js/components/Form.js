@@ -15,7 +15,7 @@ class ConnectedForm extends Component {
     this.state = {
       title: ""
     };
-    this.handChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -54,4 +54,4 @@ class ConnectedForm extends Component {
 // first argument for connect must be null if mapStateToProps is absent
 const Form = connect(null, mapDispatchToProps)(ConnectedForm);
 
-export default form;
+export default Form;
